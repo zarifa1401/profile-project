@@ -11,7 +11,6 @@ function App() {
     streakDays: 2,
     longestStreak : 2,
     recentBadgesText: "No badges earned yet.",
-
     personalInfo: {
       Email: 'ehsan.ehrari@codetoinspire.org',
       Gender: 'Male',
