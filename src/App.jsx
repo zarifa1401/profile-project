@@ -1,42 +1,49 @@
-import "./App.css";
-import ProfilePage from "./components/ProfilePage";
-import avatarImage from "./assets/avatar.png";
+import './App.css'
+import avatarImgae from './assets/avatar.png'
+import ProfilePage from './components/ProfilePage'
 
-export default function App() {
-  const user = {
-    name: "Ehsan Ehrari",
-    username: "@ehsanehrari",
-    avatarImage: avatarImage, // if you are using image later, we can replace this with avatarUrl
+function App(){
+  const user={
+    name: "Zarifa Rahmani",
+    username: "Zari1404",
+    avatorImgae: avatarImgae,
     xp: 80,
-    lastActive: "Dec 22, 2025",
+    lastActive: "Dec 28 2025",
     streakDays: 2,
-    longestStreak: 2,
+    longestStreak : 2,
     recentBadgesText: "No badges earned yet.",
-  
-    personalInfo: {
-      Email: "ehsan.ehrari@codetoinspire.org",
-      Gender: "Male",
-      Country: "Afghanistan",
-      "Province orState ": "Herat",
-      "Teaching Experience (in years)": "21",
-      "Date Of Birth": "2/16/86",
+
+    PersonalInfo:{
+      Email: 'zarifarahmani99@gmmail.com',
+      Gender: 'Female',
+      Country: 'Afghanistan',
+      "Province or State": 'Herat',
+      "Teaching Expreiance": "21",
+      "Date of Birth": "2/4/1382",
       "Online Portfolio Link": "N/A",
       "LinkedIn Link": "Open the Link",
-      Languages: "farsi, english",
-      Bio: "Mentor @CodeToInspire",
+      Languages: "Farsi, english",
+      Bio: "Software Engineer"
+
+
     },
-  
     accountDetails: {
       Role: "Mentor",
       Status: "Active",
       Verification: "Verified",
-    },
-  };
-  
 
-  return (
-    <div className="page">
-      <ProfilePage user={user} />
+
+    }
+
+
+  }
+  return(
+    <div className='page'>
+      <ProfilePage user={user}></ProfilePage>
+
     </div>
-  );
+  )
 }
+
+export default App
+
